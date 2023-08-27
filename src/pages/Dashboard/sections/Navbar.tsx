@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <HStack
         height={"1.7cm"}
-        paddingX={"40px"}
+        paddingX={{ base: "10px", lg: "40px" }}
         width={"100%"}
         maxW={"1440px"}
         backgroundColor={secondaryColor}
@@ -99,20 +99,55 @@ const Navbar = () => {
         </HStack>
 
         <Stack gap={"10px"} my={"30px"}>
-          <Button variant={"solid"} colorScheme="facebook">
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#Carousel";
+            }}
+          >
             Beranda
           </Button>
-          <Button variant={"solid"} colorScheme="facebook">
-            Harga
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#Products";
+            }}
+          >
+            Products
           </Button>
-          <Button variant={"solid"} colorScheme="facebook">
-            Fitur
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#Benefit";
+            }}
+          >
+            Keuntungan
           </Button>
-          <Button variant={"solid"} colorScheme="facebook">
-            Tahapan
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#OurClients";
+            }}
+          >
+            Client Kami
           </Button>
-          <Button variant={"solid"} colorScheme="facebook">
-            Install App
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#AnotherServices";
+            }}
+          >
+            Layanan Kami
           </Button>
           <HStack>
             <Button width={"50%"} colorScheme="blue">

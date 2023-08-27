@@ -38,8 +38,8 @@ const Carousel = () => {
         padding={"10px"}
         backgroundColor={"whiteAlpha.300"}
         borderRadius={"5px"}
-        top={"2cm"}
-        left={"2cm"}
+        top={{ base: "2cm", lg: "2cm" }}
+        left={{ base: "10px", lg: "2cm" }}
         width={{ base: "90px", lg: "170px" }}
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
@@ -54,8 +54,8 @@ const Carousel = () => {
         padding={"10px"}
         backgroundColor={"whiteAlpha.300"}
         borderRadius={"5px"}
-        bottom={"2cm"}
-        left={"2cm"}
+        bottom={{ base: "10px", lg: "2cm" }}
+        left={{ base: "10px", lg: "2cm" }}
         width={{ base: "90px", lg: "170px" }}
         objectFit={"contain"}
         transform={"rotate(5deg)"}
@@ -70,8 +70,8 @@ const Carousel = () => {
         padding={"10px"}
         backgroundColor={"whiteAlpha.300"}
         borderRadius={"5px"}
-        bottom={"2cm"}
-        right={"2cm"}
+        bottom={{ base: "10px", lg: "2cm" }}
+        right={{ base: "10px", lg: "2cm" }}
         width={{ base: "90px", lg: "170px" }}
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
@@ -86,8 +86,8 @@ const Carousel = () => {
         padding={"10px"}
         backgroundColor={"whiteAlpha.300"}
         borderRadius={"5px"}
-        top={"2cm"}
-        right={"2cm"}
+        top={{ base: "2cm", lg: "2cm" }}
+        right={{ base: "10px", lg: "2cm" }}
         width={{ base: "90px", lg: "170px" }}
         objectFit={"contain"}
         transform={"rotate(5deg)"}

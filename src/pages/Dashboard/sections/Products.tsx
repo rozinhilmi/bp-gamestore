@@ -61,12 +61,12 @@ const Products = () => {
         my={"30px"}
       >
         {products.map((item: any, index: number) => (
-          <Stack key={index}>
-            <Image
-              src={`/assets/Products/${item.src}`}
-              width={"220px"}
-              objectFit={"contain"}
-            />
+          <Stack
+            key={index}
+            width={{ base: "45%", lg: "220px" }}
+            objectFit={"contain"}
+          >
+            <Image src={`/assets/Products/${item.src}`} />
             <Text color={primaryTextColor} as={"b"}>
               {item.title}
             </Text>
