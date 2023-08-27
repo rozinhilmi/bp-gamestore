@@ -76,7 +76,7 @@ const Navbar = () => {
         transform={!showSidebar ? "translateX(100%)" : "translateX(0%)"}
         transition="all 0.5s"
         display={{ base: "flex", lg: "none" }}
-        paddingX={"40px"}
+        paddingX={{ base: "10px", lg: "40px" }}
         paddingY={"20px"}
         width={"100%"}
         height={"100vh"}
