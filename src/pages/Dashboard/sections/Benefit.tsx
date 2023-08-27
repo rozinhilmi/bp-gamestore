@@ -66,7 +66,7 @@ const Benefit = () => {
             key={index}
             flexDirection={{
               base: "column-reverse",
-              xl: index % 2 !== 0 ? "row-reverse" : "row",
+              md: index % 2 !== 0 ? "row-reverse" : "row",
             }}
             gap={"30px"}
           >
@@ -74,7 +74,7 @@ const Benefit = () => {
               <Text
                 color={primaryTextColor}
                 as={"b"}
-                fontSize={{ base: "2xl", lg: "4xl" }}
+                fontSize={{ base: "2xl", xl: "4xl" }}
               >
                 {item.title}
               </Text>

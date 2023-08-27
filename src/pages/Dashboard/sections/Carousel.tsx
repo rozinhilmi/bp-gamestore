@@ -15,7 +15,12 @@ const Carousel = () => {
       position={"relative"}
       id="Carousel"
     >
-      <Text zIndex={"2"} color={primaryTextColor} as={"b"} fontSize={"3xl"}>
+      <Text
+        zIndex={"2"}
+        color={primaryTextColor}
+        as={"b"}
+        fontSize={{ sm: "2xl", md: "3xl" }}
+      >
         Jadi Reseller Voucher Game Bersama BP Game Store
       </Text>
       <Text
