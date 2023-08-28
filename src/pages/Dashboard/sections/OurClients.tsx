@@ -81,7 +81,7 @@ const OurClients = () => {
             width={{ base: "45%", lg: "220px" }}
             objectFit={"contain"}
           >
-            <Image src={`/assets/Products/${item.src}`} />
+            <Image src={`/assets/Products/${item.src}`} loading="lazy" />
             <Text color={primaryTextDarkColor} as={"b"}>
               {item.title}
             </Text>

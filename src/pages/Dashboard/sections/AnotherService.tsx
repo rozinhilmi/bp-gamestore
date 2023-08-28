@@ -81,6 +81,7 @@ const AnotherService = () => {
                 width={"220px"}
                 alignSelf={"center"}
                 src={`/assets/Products/${item.src}`}
+                loading="lazy"
               />
             </Stack>
           </HStack>
