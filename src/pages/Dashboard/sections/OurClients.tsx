@@ -1,7 +1,7 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextColor,
-  secondaryColor,
+  primaryTextDarkColor,
+  secondaryDarkColor,
 } from "../../../utils/constant/theme";
 
 const OurClients = () => {
@@ -40,7 +40,7 @@ const OurClients = () => {
     <Stack
       padding={{ base: "0px", lg: "30px" }}
       paddingY={"30px"}
-      bg={secondaryColor}
+      bg={secondaryDarkColor}
       margin={"20px"}
       borderRadius={"12px"}
       alignItems={"center"}
@@ -55,14 +55,14 @@ const OurClients = () => {
           as={"b"}
           fontSize={{ base: "2xl", lg: "4xl" }}
           textAlign={"center"}
-          color={primaryTextColor}
+          color={primaryTextDarkColor}
         >
           Dipercaya Oleh Klien & Perusahaan Ternama
         </Text>
         <Text
           width={{ base: "100%", lg: "60%" }}
           textAlign={"center"}
-          color={primaryTextColor}
+          color={primaryTextDarkColor}
         >
           Dengan fokus kami yang tak pernah padam, kami bertekad untuk terus
           memberikan kepuasan yang tak terhingga kepada pengguna dan klien kami.
@@ -82,7 +82,7 @@ const OurClients = () => {
             objectFit={"contain"}
           >
             <Image src={`/assets/Products/${item.src}`} />
-            <Text color={primaryTextColor} as={"b"}>
+            <Text color={primaryTextDarkColor} as={"b"}>
               {item.title}
             </Text>
           </Stack>
@@ -92,7 +92,7 @@ const OurClients = () => {
         as={"b"}
         fontSize={"3xl"}
         textAlign={"center"}
-        color={primaryTextColor}
+        color={primaryTextDarkColor}
       >
         150+ Client Lainya
       </Text>

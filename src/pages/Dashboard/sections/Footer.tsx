@@ -1,7 +1,7 @@
 import { Button, Divider, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextColor,
-  secondaryColor,
+  primaryTextDarkColor,
+  secondaryDarkColor,
 } from "../../../utils/constant/theme";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
@@ -11,7 +11,7 @@ const Footer = () => {
     <Stack
       padding={{ base: "20px", lg: "30px" }}
       paddingY={"30px"}
-      bg={secondaryColor}
+      bg={secondaryDarkColor}
       borderRadius={"12px"}
       alignItems={"center"}
     >
@@ -23,7 +23,7 @@ const Footer = () => {
       >
         <Stack>
           <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
-          <Text color={primaryTextColor}>
+          <Text color={primaryTextDarkColor}>
             Supplier of top up games & vouchers best selling, cheap, safe legal
             100% with the most complete payment in Indonesia{" "}
           </Text>
@@ -43,7 +43,7 @@ const Footer = () => {
       </HStack>
 
       <Divider />
-      <Text color={primaryTextColor} alignSelf={"center"}>
+      <Text color={primaryTextDarkColor} alignSelf={"center"}>
         © 2023 BP Game Store. All rights reserved.{" "}
       </Text>
     </Stack>

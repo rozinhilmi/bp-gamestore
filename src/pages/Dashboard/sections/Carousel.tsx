@@ -1,5 +1,8 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
-import { primaryTextColor } from "../../../utils/constant/theme";
+import {
+  primaryTextDarkColor,
+  secondaryTextColor,
+} from "../../../utils/constant/theme";
 
 const Carousel = () => {
   return (
@@ -17,7 +20,7 @@ const Carousel = () => {
     >
       <Text
         zIndex={"2"}
-        color={primaryTextColor}
+        color={primaryTextDarkColor}
         as={"b"}
         fontSize={{ sm: "2xl", md: "3xl" }}
       >
@@ -26,7 +29,7 @@ const Carousel = () => {
       <Text
         zIndex={"2"}
         width={{ base: "100%", lg: "60%" }}
-        color={primaryTextColor}
+        color={secondaryTextColor}
       >
         Bisnis VocaGame berkomitmen untuk menjadi Supplier Top Up Instant Game &
         Voucher termurah, terpercaya, aman, legal dan melayani 24 jam dengan

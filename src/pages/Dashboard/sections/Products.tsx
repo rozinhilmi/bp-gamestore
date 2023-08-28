@@ -1,7 +1,7 @@
 import { HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextColor,
-  secondaryColor,
+  primaryTextDarkColor,
+  secondaryDarkColor,
 } from "../../../utils/constant/theme";
 
 const Products = () => {
@@ -40,7 +40,7 @@ const Products = () => {
     <Stack
       padding={{ base: "0px", lg: "30px" }}
       paddingY={"30px"}
-      bg={secondaryColor}
+      bg={secondaryDarkColor}
       margin={"20px"}
       borderRadius={"12px"}
       id="Products"
@@ -48,7 +48,7 @@ const Products = () => {
       <Text
         as={"b"}
         fontSize={{ base: "2xl", lg: "3xl" }}
-        color={primaryTextColor}
+        color={primaryTextDarkColor}
         textAlign={"center"}
       >
         Daftar Produk yang Tersedia
@@ -67,7 +67,7 @@ const Products = () => {
             objectFit={"contain"}
           >
             <Image src={`/assets/Products/${item.src}`} />
-            <Text color={primaryTextColor} as={"b"}>
+            <Text color={primaryTextDarkColor} as={"b"}>
               {item.title}
             </Text>
           </Stack>

@@ -1,7 +1,7 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextColor,
-  secondaryColor,
+  primaryTextDarkColor,
+  secondaryDarkColor,
 } from "../../../utils/constant/theme";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -15,7 +15,7 @@ const Navbar = () => {
         paddingX={{ base: "10px", lg: "40px" }}
         width={"100%"}
         maxW={"1440px"}
-        backgroundColor={secondaryColor}
+        backgroundColor={secondaryDarkColor}
         justify={"space-between"}
         className="navbar"
         position={"fixed"}
@@ -27,29 +27,29 @@ const Navbar = () => {
         <HStack gap={"30px"} display={{ base: "none", lg: "flex" }}>
           <HStack gap={"30px"}>
             <a href="#Carousel">
-              <Text color={primaryTextColor} cursor={"pointer"}>
+              <Text color={primaryTextDarkColor} cursor={"pointer"}>
                 Beranda
               </Text>
             </a>
 
             <a href="#Products">
-              <Text color={primaryTextColor} cursor={"pointer"}>
+              <Text color={primaryTextDarkColor} cursor={"pointer"}>
                 Produk
               </Text>
             </a>
 
             <a href="#Benefit">
-              <Text color={primaryTextColor} cursor={"pointer"}>
+              <Text color={primaryTextDarkColor} cursor={"pointer"}>
                 Keuntungan
               </Text>
             </a>
             <a href="#OurClients">
-              <Text color={primaryTextColor} cursor={"pointer"}>
+              <Text color={primaryTextDarkColor} cursor={"pointer"}>
                 Client Kami
               </Text>
             </a>
             <a href="#AnotherServices">
-              <Text color={primaryTextColor} cursor={"pointer"}>
+              <Text color={primaryTextDarkColor} cursor={"pointer"}>
                 Layanan Kami
               </Text>
             </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
         width={"100%"}
         height={"100vh"}
         maxW={"1440px"}
-        backgroundColor={secondaryColor}
+        backgroundColor={secondaryDarkColor}
         position={"fixed"}
         zIndex={"11"}
       >

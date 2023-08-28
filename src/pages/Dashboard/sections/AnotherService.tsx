@@ -1,5 +1,8 @@
 import { HStack, Image, Stack, Text } from "@chakra-ui/react";
-import { primaryTextColor } from "../../../utils/constant/theme";
+import {
+  primaryTextDarkColor,
+  secondaryTextColor,
+} from "../../../utils/constant/theme";
 
 const AnotherService = () => {
   const services: any = [
@@ -28,7 +31,7 @@ const AnotherService = () => {
         <Text
           as={"b"}
           fontSize={{ base: "2xl", lg: "3xl" }}
-          color={primaryTextColor}
+          color={primaryTextDarkColor}
           textAlign={"center"}
         >
           Layanan lain yang kami tawarkan
@@ -36,7 +39,7 @@ const AnotherService = () => {
         <Text
           width={{ base: "100%", lg: "60%" }}
           textAlign={"center"}
-          color={primaryTextColor}
+          color={secondaryTextColor}
         >
           Kami juga menyediakan berbagai macam layanan bagi anda dengan berbagai
           macam kebutuhan. Untuk saat ini tersedia layanan VocaGame untuk topup
@@ -57,13 +60,13 @@ const AnotherService = () => {
           >
             <Stack width={{ base: "100%", xl: "50%" }}>
               <Text
-                color={primaryTextColor}
+                color={primaryTextDarkColor}
                 as={"b"}
                 fontSize={{ base: "2xl", lg: "4xl" }}
               >
                 {item.title}
               </Text>
-              <Text color={primaryTextColor}>{item.description}</Text>
+              <Text color={secondaryTextColor}>{item.description}</Text>
             </Stack>
 
             <Stack width={{ base: "100%", xl: "50%" }}>

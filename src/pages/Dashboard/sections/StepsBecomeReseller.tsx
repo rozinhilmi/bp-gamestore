@@ -1,21 +1,21 @@
 import { Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextColor,
-  secondaryColor,
+  primaryTextDarkColor,
+  secondaryDarkColor,
 } from "../../../utils/constant/theme";
 
 const StepsBecomeReseller = () => {
   return (
     <Stack
       padding={"30px"}
-      bg={secondaryColor}
+      bg={secondaryDarkColor}
       margin={"20px"}
       borderRadius={"12px"}
     >
       <Text
         as={"b"}
         fontSize={"3xl"}
-        color={primaryTextColor}
+        color={primaryTextDarkColor}
         textAlign={"center"}
       >
         Tahapan Menjadi Reseller
