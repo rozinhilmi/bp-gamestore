@@ -27,7 +27,7 @@ const Navbar = () => {
         <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
 
         <HStack gap={"30px"} display={{ base: "none", lg: "flex" }}>
-          <HStack gap={"30px"}>
+          <HStack gap={"15px"}>
             <a href="#Carousel">
               <Text
                 color={primaryTextDarkColor}
@@ -67,7 +67,7 @@ const Navbar = () => {
                 as={"b"}
                 cursor={"pointer"}
               >
-                Client Kami
+                Jumlah Reseller
               </Text>
             </a>
             <a href="#AnotherServices">

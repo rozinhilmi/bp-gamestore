@@ -21,7 +21,7 @@ const AnotherService = () => {
           color={primaryTextDarkColor}
           textAlign={"center"}
         >
-          Layanan lain yang kami tawarkan
+          Layanan yang Kami Tawarkan
         </Text>
         <Text
           width={{ base: "100%", lg: "60%" }}
