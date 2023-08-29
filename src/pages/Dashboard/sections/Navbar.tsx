@@ -188,13 +188,17 @@ const Navbar = () => {
               style={{ width: "50%" }}
               to={"https://bpgamestore.com/auth/login"}
             >
-              <Button colorScheme="blue">Masuk</Button>
+              <Button width={"100%"} colorScheme="blue">
+                Masuk
+              </Button>
             </Link>
             <Link
               style={{ width: "50%" }}
               to={"https://bpgamestore.com/auth/register"}
             >
-              <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
+              <Button width={"100%"} colorScheme="whiteAlpha">
+                Daftar Sekarang
+              </Button>
             </Link>
           </HStack>
         </Stack>
