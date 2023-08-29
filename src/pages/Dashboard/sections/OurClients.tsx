@@ -2,6 +2,7 @@ import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
   primaryTextDarkColor,
   secondaryDarkColor,
+  secondaryTextColor,
 } from "../../../utils/constant/theme";
 import { clients } from "../../../../public/database.json";
 
@@ -32,7 +33,7 @@ const OurClients = () => {
         <Text
           width={{ base: "100%", lg: "60%" }}
           textAlign={"center"}
-          color={primaryTextDarkColor}
+          color={secondaryTextColor}
         >
           Dengan fokus kami yang tak pernah padam, kami bertekad untuk terus
           memberikan kepuasan yang tak terhingga kepada pengguna dan klien kami.

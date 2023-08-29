@@ -37,7 +37,7 @@ const Carousel = () => {
         metode pembayaran terlengkap.
       </Text>
       <HStack zIndex={"2"}>
-        <Link to={"https://bpgamestore.com/auth/register"}>
+        <Link to={"https://bpgamestore.com/auth/register"} target="_blank">
           <Button colorScheme="blue">Daftar Sekarang</Button>
         </Link>
 

@@ -34,7 +34,7 @@ const AnotherService = () => {
           topup
         </Text>
       </Stack>
-      <Stack gap={"30px"} my={"30px"}>
+      <Stack gap={"80px"} my={"30px"}>
         {services.map((item: any, index: number) => (
           <HStack
             justifyContent={"space-between"}
@@ -77,8 +77,12 @@ const AnotherService = () => {
                 bottom={"2cm"}
                 left={"2cm"}
                 objectFit={"contain"}
-                width={"220px"}
-                alignSelf={"center"}
+                width={{ base: "220px", md: "80%", xl: "50%" }}
+                alignSelf={{
+                  base: "center",
+                  md: index % 2 == 0 ? "flex-start" : "flex-end",
+                  lg: "center",
+                }}
                 src={`/assets/Products/${item.src}`}
                 loading="lazy"
               />

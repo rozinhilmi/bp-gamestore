@@ -83,10 +83,10 @@ const Navbar = () => {
           </HStack>
 
           <HStack>
-            <Link to={"https://bpgamestore.com/auth/login"}>
+            <Link to={"https://bpgamestore.com/auth/login"} target="_blank">
               <Button colorScheme="blue">Masuk</Button>
             </Link>
-            <Link to={"https://bpgamestore.com/auth/register"}>
+            <Link to={"https://bpgamestore.com/auth/register"} target="_blank">
               <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
             </Link>
             {/* <Button colorScheme="blackAlpha">
@@ -187,6 +187,7 @@ const Navbar = () => {
             <Link
               style={{ width: "50%" }}
               to={"https://bpgamestore.com/auth/login"}
+              target="_blank"
             >
               <Button width={"100%"} colorScheme="blue">
                 Masuk
@@ -195,6 +196,7 @@ const Navbar = () => {
             <Link
               style={{ width: "50%" }}
               to={"https://bpgamestore.com/auth/register"}
+              target="_blank"
             >
               <Button width={"100%"} colorScheme="whiteAlpha">
                 Daftar Sekarang

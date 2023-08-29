@@ -23,7 +23,7 @@ const Benefit = () => {
         Mengapa Memilih Kami
       </Text>
 
-      <Stack gap={"50px"} my={"30px"}>
+      <Stack gap={"80px"} my={"30px"}>
         {benefit.map((item: any, index: number) => (
           <HStack
             justifyContent={"space-between"}
@@ -66,9 +66,13 @@ const Benefit = () => {
                 bottom={"2cm"}
                 left={"2cm"}
                 objectFit={"contain"}
-                width={"220px"}
-                alignSelf={"center"}
-                src={`/assets/Products/${item.src}`}
+                width={{ base: "220px", md: "80%", xl: "50%" }}
+                alignSelf={{
+                  base: "center",
+                  md: index % 2 == 0 ? "flex-start" : "flex-end",
+                  lg: "center",
+                }}
+                src={`/assets/Benefit/${item.src}`}
                 loading="lazy"
               />
             </Stack>
