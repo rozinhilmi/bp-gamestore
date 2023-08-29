@@ -3,6 +3,7 @@ import {
   primaryTextDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   return (
@@ -36,8 +37,11 @@ const Carousel = () => {
         metode pembayaran terlengkap.
       </Text>
       <HStack zIndex={"2"}>
-        <Button colorScheme="blue">Masuk</Button>
-        <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
+        <Link to={"https://bpgamestore.com/auth/register"}>
+          <Button colorScheme="blue">Daftar Sekarang</Button>
+        </Link>
+
+        <Button colorScheme="whiteAlpha">Konsultasi Gratis</Button>
       </HStack>
       <Stack
         // display={{ base: "none", xl: "block" }}

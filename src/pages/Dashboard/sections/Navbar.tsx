@@ -6,6 +6,8 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+// import { BsFillSunFill } from "react-icons/bs";
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
@@ -27,37 +29,69 @@ const Navbar = () => {
         <HStack gap={"30px"} display={{ base: "none", lg: "flex" }}>
           <HStack gap={"30px"}>
             <a href="#Carousel">
-              <Text color={primaryTextDarkColor} cursor={"pointer"}>
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
                 Beranda
               </Text>
             </a>
 
             <a href="#Products">
-              <Text color={primaryTextDarkColor} cursor={"pointer"}>
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
                 Produk
               </Text>
             </a>
 
             <a href="#Benefit">
-              <Text color={primaryTextDarkColor} cursor={"pointer"}>
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
                 Keuntungan
               </Text>
             </a>
             <a href="#OurClients">
-              <Text color={primaryTextDarkColor} cursor={"pointer"}>
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
                 Client Kami
               </Text>
             </a>
             <a href="#AnotherServices">
-              <Text color={primaryTextDarkColor} cursor={"pointer"}>
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
                 Layanan Kami
               </Text>
             </a>
           </HStack>
 
           <HStack>
-            <Button colorScheme="blue">Masuk</Button>
-            <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
+            <Link to={"https://bpgamestore.com/auth/login"}>
+              <Button colorScheme="blue">Masuk</Button>
+            </Link>
+            <Link to={"https://bpgamestore.com/auth/register"}>
+              <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
+            </Link>
+            {/* <Button colorScheme="blackAlpha">
+              <BsFillSunFill />
+            </Button> */}
           </HStack>
         </HStack>
 

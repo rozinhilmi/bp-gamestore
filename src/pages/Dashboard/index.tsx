@@ -7,7 +7,6 @@ import Benefit from "./sections/Benefit";
 import OurClients from "./sections/OurClients";
 import AnotherService from "./sections/AnotherService";
 import Footer from "./sections/Footer";
-
 const index = () => {
   return (
     <Stack

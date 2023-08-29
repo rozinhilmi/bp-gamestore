@@ -3,39 +3,9 @@ import {
   primaryTextDarkColor,
   secondaryDarkColor,
 } from "../../../utils/constant/theme";
+import { clients } from "../../../../public/database.json";
 
 const OurClients = () => {
-  const clients: any = [
-    {
-      title: "Mobile Legend",
-      src: "Mobile Legend.webp",
-    },
-    {
-      title: "Pubg Mobile",
-      src: "Pubg Mobile.webp",
-    },
-    {
-      title: "Free Fire",
-      src: "Free Fire.webp",
-    },
-
-    {
-      title: "Fifa Mobile",
-      src: "Fifa Mobile.webp",
-    },
-    {
-      title: "AOV",
-      src: "AOV.webp",
-    },
-    {
-      title: "COD Mobile",
-      src: "COD Mobile.webp",
-    },
-    {
-      title: "Domino",
-      src: "Domino.webp",
-    },
-  ];
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}

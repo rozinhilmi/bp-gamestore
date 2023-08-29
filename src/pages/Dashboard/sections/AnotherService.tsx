@@ -3,22 +3,9 @@ import {
   primaryTextDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
+import { services } from "../../../../public/database.json";
 
 const AnotherService = () => {
-  const services: any = [
-    {
-      title: "BP Gamestore",
-      description:
-        "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
-      src: "Mobile Legend.webp",
-    },
-    {
-      title: "Website Gratis",
-      description:
-        "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
-      src: "Pubg Mobile.webp",
-    },
-  ];
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}
@@ -63,10 +50,16 @@ const AnotherService = () => {
                 color={primaryTextDarkColor}
                 as={"b"}
                 fontSize={{ base: "2xl", lg: "4xl" }}
+                textAlign={index % 2 == 0 ? "end" : "start"}
               >
                 {item.title}
               </Text>
-              <Text color={secondaryTextColor}>{item.description}</Text>
+              <Text
+                color={secondaryTextColor}
+                textAlign={index % 2 == 0 ? "end" : "start"}
+              >
+                {item.description}
+              </Text>
             </Stack>
 
             <Stack width={{ base: "100%", xl: "50%" }}>

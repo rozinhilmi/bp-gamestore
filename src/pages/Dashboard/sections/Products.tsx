@@ -3,39 +3,9 @@ import {
   primaryTextDarkColor,
   secondaryDarkColor,
 } from "../../../utils/constant/theme";
+import { products } from "../../../../public/database.json";
 
 const Products = () => {
-  const products: any = [
-    {
-      title: "Mobile Legend",
-      src: "Mobile Legend.webp",
-    },
-    {
-      title: "Pubg Mobile",
-      src: "Pubg Mobile.webp",
-    },
-    {
-      title: "Free Fire",
-      src: "Free Fire.webp",
-    },
-
-    {
-      title: "Fifa Mobile",
-      src: "Fifa Mobile.webp",
-    },
-    {
-      title: "AOV",
-      src: "AOV.webp",
-    },
-    {
-      title: "COD Mobile",
-      src: "COD Mobile.webp",
-    },
-    {
-      title: "Domino",
-      src: "Domino.webp",
-    },
-  ];
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}
@@ -65,6 +35,9 @@ const Products = () => {
             key={index}
             width={{ base: "45%", lg: "220px" }}
             objectFit={"contain"}
+            cursor={"pointer"}
+            transition={"0.5s"}
+            _hover={{ transform: "translateY(-10px)" }}
           >
             <Image src={`/assets/Products/${item.src}`} loading="lazy" />
             <Text color={primaryTextDarkColor} as={"b"}>
