@@ -41,7 +41,7 @@ const AnotherService = () => {
             key={index}
             flexDirection={{
               base: "column-reverse",
-              xl: index % 2 !== 0 ? "row-reverse" : "row",
+              md: index % 2 !== 0 ? "row-reverse" : "row",
             }}
             gap={"30px"}
           >
@@ -50,13 +50,19 @@ const AnotherService = () => {
                 color={primaryTextDarkColor}
                 as={"b"}
                 fontSize={{ base: "2xl", lg: "4xl" }}
-                textAlign={index % 2 == 0 ? "end" : "start"}
+                textAlign={{
+                  base: "start",
+                  md: index % 2 == 0 ? "end" : "start",
+                }}
               >
                 {item.title}
               </Text>
               <Text
                 color={secondaryTextColor}
-                textAlign={index % 2 == 0 ? "end" : "start"}
+                textAlign={{
+                  base: "start",
+                  md: index % 2 == 0 ? "end" : "start",
+                }}
               >
                 {item.description}
               </Text>
