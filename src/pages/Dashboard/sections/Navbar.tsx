@@ -184,15 +184,17 @@ const Navbar = () => {
             Layanan Kami
           </Button>
           <HStack>
-            <Link to={"https://bpgamestore.com/auth/login"}>
-              <Button width={"50%"} colorScheme="blue">
-                Masuk
-              </Button>
+            <Link
+              style={{ width: "50%" }}
+              to={"https://bpgamestore.com/auth/login"}
+            >
+              <Button colorScheme="blue">Masuk</Button>
             </Link>
-            <Link to={"https://bpgamestore.com/auth/register"}>
-              <Button width={"50%"} colorScheme="whiteAlpha">
-                Daftar Sekarang
-              </Button>
+            <Link
+              style={{ width: "50%" }}
+              to={"https://bpgamestore.com/auth/register"}
+            >
+              <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
             </Link>
           </HStack>
         </Stack>
