@@ -80,6 +80,16 @@ const Navbar = () => {
                 Layanan Kami
               </Text>
             </a>
+            <a href="#OtherServices">
+              <Text
+                color={primaryTextDarkColor}
+                _hover={{ color: "rgb(49, 130, 206)" }}
+                as={"b"}
+                cursor={"pointer"}
+              >
+                Layanan Lain
+              </Text>
+            </a>
           </HStack>
 
           <HStack>
@@ -171,7 +181,7 @@ const Navbar = () => {
               window.location.href = "#OurClients";
             }}
           >
-            Client Kami
+            Jumlah Reseller
           </Button>
           <Button
             variant={"solid"}
@@ -182,6 +192,16 @@ const Navbar = () => {
             }}
           >
             Layanan Kami
+          </Button>
+          <Button
+            variant={"solid"}
+            colorScheme="facebook"
+            onClick={() => {
+              setShowSidebar(false);
+              window.location.href = "#OtherServices";
+            }}
+          >
+            Layanan Lain
           </Button>
           <HStack>
             <Link

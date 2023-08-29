@@ -28,15 +28,14 @@ const OurClients = () => {
           textAlign={"center"}
           color={primaryTextDarkColor}
         >
-          Dipercaya Oleh Klien & Perusahaan Ternama
+          Jumlah Reseller
         </Text>
         <Text
           width={{ base: "100%", lg: "60%" }}
           textAlign={"center"}
           color={secondaryTextColor}
         >
-          Dengan fokus kami yang tak pernah padam, kami bertekad untuk terus
-          memberikan kepuasan yang tak terhingga kepada pengguna dan klien kami.
+          Gampang kari ngedit
         </Text>
       </Stack>
 

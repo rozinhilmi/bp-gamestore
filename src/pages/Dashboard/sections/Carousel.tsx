@@ -4,6 +4,7 @@ import {
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 import { Link } from "react-router-dom";
+import { carousel_content } from "../../../../public/database.json";
 
 const Carousel = () => {
   return (
@@ -25,16 +26,14 @@ const Carousel = () => {
         as={"b"}
         fontSize={{ sm: "2xl", md: "3xl" }}
       >
-        Jadi Reseller Voucher Game Bersama BP Game Store
+        Jadi Reseller Produk Digital Bersama BP Game Store
       </Text>
       <Text
         zIndex={"2"}
         width={{ base: "100%", lg: "60%" }}
         color={secondaryTextColor}
       >
-        Bisnis VocaGame berkomitmen untuk menjadi Supplier Top Up Instant Game &
-        Voucher termurah, terpercaya, aman, legal dan melayani 24 jam dengan
-        metode pembayaran terlengkap.
+        Mulai bisnis digital
       </Text>
       <HStack zIndex={"2"}>
         <Link to={"https://bpgamestore.com/auth/register"} target="_blank">
@@ -56,7 +55,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Products/Mobile Legend.webp`} />
+        <Image src={`/assets/Carousel/${carousel_content.gambar[0]}`} />
       </Stack>
 
       <Stack
@@ -72,7 +71,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Products/Pubg Mobile.webp`} />
+        <Image src={`/assets/Carousel/${carousel_content.gambar[1]}`} />
       </Stack>
 
       <Stack
@@ -88,7 +87,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Products/Free Fire.webp`} />
+        <Image src={`/assets/Carousel/${carousel_content.gambar[2]}`} />
       </Stack>
 
       <Stack
@@ -104,7 +103,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Products/Fifa Mobile.webp`} />
+        <Image src={`/assets/Carousel/${carousel_content.gambar[3]}`} />
       </Stack>
     </Stack>
   );

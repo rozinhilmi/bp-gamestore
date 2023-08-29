@@ -7,6 +7,7 @@ import Benefit from "./sections/Benefit";
 import OurClients from "./sections/OurClients";
 import AnotherService from "./sections/AnotherService";
 import Footer from "./sections/Footer";
+import OtherService from "./sections/OtherServices";
 const index = () => {
   return (
     <Stack
@@ -28,6 +29,7 @@ const index = () => {
         <Benefit />
         <OurClients />
         <AnotherService />
+        <OtherService />
         <Footer />
         {/* <StepsBecomeReseller /> */}
       </Stack>
