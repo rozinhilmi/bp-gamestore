@@ -8,7 +8,7 @@ import {
 const OtherService = (props: { other_services: any }) => {
   return (
     <Stack
-      padding={{ base: "0px", lg: "30px" }}
+      padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
       margin={"20px"}
       borderRadius={"12px"}

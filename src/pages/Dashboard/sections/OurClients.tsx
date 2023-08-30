@@ -8,7 +8,7 @@ import {
 const OurClients = (props: { clients: any }) => {
   return (
     <Stack
-      padding={{ base: "0px", lg: "30px" }}
+      padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
       bg={secondaryDarkColor}
       margin={"20px"}
