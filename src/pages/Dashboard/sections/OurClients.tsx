@@ -11,7 +11,7 @@ const OurClients = (props: { clients: any }) => {
       padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
       bg={secondaryDarkColor}
-      margin={"20px"}
+      margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       alignItems={"center"}
       id="OurClients"

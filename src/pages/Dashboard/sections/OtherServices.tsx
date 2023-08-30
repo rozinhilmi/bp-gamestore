@@ -10,7 +10,7 @@ const OtherService = (props: { other_services: any }) => {
     <Stack
       padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
-      margin={"20px"}
+      margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       id="OtherServices"
       bg={secondaryDarkColor}

@@ -46,7 +46,7 @@ const Products = (props: { list_category_product: any; products: any }) => {
       padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
       bg={secondaryDarkColor}
-      margin={"20px"}
+      margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       id="Products"
       gap={"30px"}
