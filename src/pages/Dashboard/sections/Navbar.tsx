@@ -70,7 +70,7 @@ const Navbar = () => {
                 Jumlah Reseller
               </Text>
             </a>
-            <a href="#AnotherServices">
+            <a href="#Services">
               <Text
                 color={primaryTextDarkColor}
                 _hover={{ color: "rgb(49, 130, 206)" }}
@@ -188,7 +188,7 @@ const Navbar = () => {
             colorScheme="facebook"
             onClick={() => {
               setShowSidebar(false);
-              window.location.href = "#AnotherServices";
+              window.location.href = "#Services";
             }}
           >
             Layanan Kami

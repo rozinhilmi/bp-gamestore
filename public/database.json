@@ -1,7 +1,7 @@
 {
   "carousel_content": {
     "title": "Jadi Reseller Produk Digital Bersama BP Game Store",
-    "description": "Bisnis VocaGame berkomitmen untuk menjadi Supplier Top Up Instant Game & Voucher termurah, terpercaya, aman, legal dan melayani 24 jam dengan metode pembayaran terlengkap.",
+    "description": "Mulai Bisnis Digital",
     "gambar": [
       "game populer.webp",
       "pulsa ppob.webp",
@@ -9,7 +9,7 @@
       "gift&joki.webp"
     ]
   },
-  "list_category_product": ["Mobile Game", "Pc Game", "Vaucher", "opoae"],
+  "list_category_product": ["Mobile Game", "Pc Game", "Vaucher"],
   "products": [
     {
       "title": "Mobile Legend",
@@ -48,61 +48,6 @@
       "category": "Mobile Game"
     }
   ],
-  "clients": [
-    {
-      "title": "Mobile Legend",
-      "src": "Mobile Legend.webp"
-    },
-    {
-      "title": "Pubg Mobile",
-      "src": "Pubg Mobile.webp"
-    },
-    {
-      "title": "Free Fire",
-      "src": "Free Fire.webp"
-    },
-
-    {
-      "title": "Fifa Mobile",
-      "src": "Fifa Mobile.webp"
-    },
-    {
-      "title": "AOV",
-      "src": "AOV.webp"
-    },
-    {
-      "title": "COD Mobile",
-      "src": "COD Mobile.webp"
-    },
-    {
-      "title": "Domino",
-      "src": "Domino.webp"
-    }
-  ],
-  "services": [
-    {
-      "title": "BP Gamestore",
-      "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
-      "src": "Mobile Legend.webp"
-    },
-    {
-      "title": "Website Gratis",
-      "description": "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
-      "src": "Pubg Mobile.webp"
-    }
-  ],
-  "another_services": [
-    {
-      "title": "BP Gamestore",
-      "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
-      "src": "Mobile Legend.webp"
-    },
-    {
-      "title": "Website Gratis",
-      "description": "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
-      "src": "Pubg Mobile.webp"
-    }
-  ],
   "benefit": [
     {
       "title": "Dapatkan produk dengan harga terbaik",
@@ -130,6 +75,44 @@
       "title": "Menyediakan Beragam Metode Pembayaran",
       "description": "Layanan Bisnis VocaGame menyediakan berbagai macam metode pembayaran yang sangat luas!. Dengan begitu, anda dapat membayar deposit dengan mudah kapan saja dan dimana saja di Bisnis Vocagame.",
       "src": "5payment secure.webp"
+    }
+  ],
+  "clients": [
+    {
+      "title": "Mobile Legend",
+      "src": "Mobile Legend.webp"
+    },
+    {
+      "title": "Pubg Mobile",
+      "src": "Pubg Mobile.webp"
+    },
+    {
+      "title": "Free Fire",
+      "src": "Free Fire.webp"
+    }
+  ],
+  "services": [
+    {
+      "title": "BP Gamestore",
+      "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
+      "src": "Mobile Legend.webp"
+    },
+    {
+      "title": "Website Gratis",
+      "description": "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
+      "src": "Pubg Mobile.webp"
+    }
+  ],
+  "other_services": [
+    {
+      "title": "BP Gamestore",
+      "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
+      "src": "Mobile Legend.webp"
+    },
+    {
+      "title": "Website Gratis",
+      "description": "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
+      "src": "Pubg Mobile.webp"
     }
   ]
 }

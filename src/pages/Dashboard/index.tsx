@@ -5,10 +5,10 @@ import { primaryDarkColor } from "../../utils/constant/theme";
 import Products from "./sections/Products";
 import Benefit from "./sections/Benefit";
 import OurClients from "./sections/OurClients";
-import AnotherService from "./sections/AnotherService";
 import Footer from "./sections/Footer";
 import OtherService from "./sections/OtherServices";
 import { Link } from "react-router-dom";
+import Services from "./sections/Services";
 const index = () => {
   return (
     <Stack
@@ -29,7 +29,7 @@ const index = () => {
         <Products />
         <Benefit />
         <OurClients />
-        <AnotherService />
+        <Services />
         <OtherService />
         <Footer />
 

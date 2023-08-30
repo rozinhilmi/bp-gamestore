@@ -5,14 +5,14 @@ import {
 } from "../../../utils/constant/theme";
 import { services } from "../../../../public/database.json";
 
-const AnotherService = () => {
+const Services = () => {
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}
       paddingY={"30px"}
       margin={"20px"}
       borderRadius={"12px"}
-      id="AnotherServices"
+      id="Services"
     >
       <Stack alignItems={"center"}>
         <Text
@@ -94,4 +94,4 @@ const AnotherService = () => {
   );
 };
 
-export default AnotherService;
+export default Services;

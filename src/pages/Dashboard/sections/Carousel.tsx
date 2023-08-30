@@ -26,14 +26,14 @@ const Carousel = () => {
         as={"b"}
         fontSize={{ sm: "2xl", md: "3xl" }}
       >
-        Jadi Reseller Produk Digital Bersama BP Game Store
+        {carousel_content.title}
       </Text>
       <Text
         zIndex={"2"}
         width={{ base: "100%", lg: "60%" }}
         color={secondaryTextColor}
       >
-        Mulai bisnis digital
+        {carousel_content.description}
       </Text>
       <HStack zIndex={"2"}>
         <Link to={"https://bpgamestore.com/auth/register"} target="_blank">

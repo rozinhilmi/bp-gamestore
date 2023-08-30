@@ -4,7 +4,7 @@ import {
   secondaryDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
-import { another_services } from "../../../../public/database.json";
+import { other_services } from "../../../../public/database.json";
 
 const OtherService = () => {
   return (
@@ -37,7 +37,7 @@ const OtherService = () => {
         </Text>
       </Stack>
       <Stack gap={"80px"} my={"30px"}>
-        {another_services.map((item: any, index: number) => (
+        {other_services.map((item: any, index: number) => (
           <HStack
             justifyContent={"space-between"}
             key={index}
