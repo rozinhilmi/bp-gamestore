@@ -4,9 +4,8 @@ import {
   secondaryDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
-import { clients } from "../../../../public/database.json";
 
-const OurClients = () => {
+const OurClients = (props: { clients: any }) => {
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}
@@ -45,7 +44,7 @@ const OurClients = () => {
         justifyContent={"center"}
         my={"30px"}
       >
-        {clients.map((item: any, index: number) => (
+        {props.clients.map((item: any, index: number) => (
           <Stack
             key={index}
             width={{ base: "45%", lg: "220px" }}

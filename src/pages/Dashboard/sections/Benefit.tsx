@@ -3,8 +3,7 @@ import {
   primaryTextDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
-import { benefit } from "../../../../public/database.json";
-const Benefit = () => {
+const Benefit = (props: { benefit: any }) => {
   return (
     <Stack
       padding={{ base: "0px", lg: "30px" }}
@@ -24,7 +23,7 @@ const Benefit = () => {
       </Text>
 
       <Stack gap={"80px"} my={"30px"}>
-        {benefit.map((item: any, index: number) => (
+        {props.benefit.map((item: any, index: number) => (
           <HStack
             justifyContent={"space-between"}
             key={index}

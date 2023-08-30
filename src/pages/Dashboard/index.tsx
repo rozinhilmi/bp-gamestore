@@ -9,7 +9,16 @@ import Footer from "./sections/Footer";
 import OtherService from "./sections/OtherServices";
 import { Link } from "react-router-dom";
 import Services from "./sections/Services";
+import axios from "axios";
+import { useEffect, useState } from "react";
 const index = () => {
+  const [data, setData]: any = useState();
+  const getData = async () => {
+    await axios.get(`database.json`).then((res) => setData(res.data));
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <Stack
       width={"100%"}
@@ -17,41 +26,44 @@ const index = () => {
       alignItems={"center"}
       backgroundColor={primaryDarkColor}
     >
-      <Stack
-        width={"100%"}
-        maxWidth={"1440px"}
-        backgroundColor={primaryDarkColor}
-        position={"relative"}
-        // minHeight={"80vh"}
-      >
-        <Navbar />
-        <Carousel />
-        <Products />
-        <Benefit />
-        <OurClients />
-        <Services />
-        <OtherService />
-        <Footer />
-
-        <Link
-          to={
-            "https://wa.me/62895335412735?text=Halo%20kak%20saya%20mau%20join%20reseller%20BP"
-          }
-          target="_blank"
+      {data ? (
+        <Stack
+          width={"100%"}
+          maxWidth={"1440px"}
+          backgroundColor={primaryDarkColor}
+          position={"relative"}
+          // minHeight={"80vh"}
         >
-          <Image
-            position={"fixed"}
-            bottom={"20px"}
-            right={"20px"}
-            cursor={"pointer"}
-            src="/assets/whatsapp-icon.png"
-            width={"60px"}
-            height={"60px"}
+          <Navbar />
+          <Carousel carousel_content={data.carousel_content} />
+          <Products
+            list_category_product={data.list_category_product}
+            products={data.products}
           />
-        </Link>
+          <Benefit benefit={data.benefit} />
+          <OurClients clients={data.clients} />
+          <Services services={data.services} />
+          <OtherService other_services={data.other_services} />
+          <Footer />
 
-        {/* <StepsBecomeReseller /> */}
-      </Stack>
+          <Link
+            to={`https://wa.me/${data.admin_chat.phone}?text=${data.admin_chat.chat}`}
+            target="_blank"
+          >
+            <Image
+              position={"fixed"}
+              bottom={"20px"}
+              right={"20px"}
+              cursor={"pointer"}
+              src="/assets/whatsapp-icon.png"
+              width={"60px"}
+              height={"60px"}
+            />
+          </Link>
+
+          {/* <StepsBecomeReseller /> */}
+        </Stack>
+      ) : null}
     </Stack>
   );
 };

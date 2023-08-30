@@ -20,8 +20,8 @@ export const convertToHumanDate = (timeStamp: string | number) => {
 
 export const convertToBillNumber = (num: number | string) => {
   if (typeof num == "string") {
-    return `Rp ${parseInt(num, 10).toLocaleString()},-` || "-";
+    return `Rp. ${parseInt(num, 10).toLocaleString()},-` || "-";
   } else {
-    return `Rp ${num.toLocaleString()},-` || "-";
+    return `Rp. ${num.toLocaleString()},-` || "-";
   }
 };

@@ -12,17 +12,33 @@ import {
   secondaryDarkColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
-import {
-  products,
-  list_category_product,
-} from "../../../../public/database.json";
 import { useState } from "react";
 import { Modal, ModalOverlay, ModalContent, ModalBody } from "@chakra-ui/react";
 import { IoMdClose } from "react-icons/io";
+import { convertToBillNumber } from "../../../utils/helper/helper";
 
-const Products = () => {
+const Products = (props: { list_category_product: any; products: any }) => {
   const [selectedCategory, setSelectedCategory]: any = useState("");
   const [selectedProduct, setSelectedProduct]: any = useState(null);
+  const katalog = [
+    {
+      title: "60 + 6 Bonds",
+      items: [
+        {
+          type: "Gold",
+          price: 13200,
+        },
+        {
+          type: "Crown",
+          price: 15200,
+        },
+        {
+          type: "Platinum",
+          price: 17200,
+        },
+      ],
+    },
+  ];
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -58,7 +74,7 @@ const Products = () => {
         >
           Semua Kategori
         </Button>
-        {list_category_product.map((item: string, index: number) => (
+        {props.list_category_product.map((item: string, index: number) => (
           <Button
             color={primaryTextDarkColor}
             onClick={() => setSelectedCategory(item)}
@@ -81,7 +97,7 @@ const Products = () => {
       </HStack>
 
       <HStack flexWrap={"wrap"} gap={"20px"} justifyContent={"center"}>
-        {products.map((item: any, index: number) =>
+        {props.products.map((item: any, index: number) =>
           item.category.includes(selectedCategory) ? (
             <Stack
               onClick={() => {
@@ -111,7 +127,7 @@ const Products = () => {
             setSelectedProduct(null);
             onClose();
           }}
-          size={"3xl"}
+          size={"full"}
         >
           <ModalOverlay />
           <ModalContent
@@ -159,20 +175,14 @@ const Products = () => {
                       justifyContent={"space-between"}
                       key={item}
                     >
-                      <Text>60 + 6 Bonds</Text>
+                      <Text>{katalog[0].title}</Text>
                       <Stack fontSize={"14px"}>
-                        <HStack justifyContent={"flex-end"}>
-                          <Text>Gold</Text>
-                          <Text>Rp. 13.145,-</Text>
-                        </HStack>
-                        <HStack justifyContent={"flex-end"}>
-                          <Text>Crown</Text>
-                          <Text>Rp. 13.145,-</Text>
-                        </HStack>
-                        <HStack justifyContent={"flex-end"}>
-                          <Text>Platinum</Text>
-                          <Text>Rp. 13.145,-</Text>
-                        </HStack>
+                        {katalog[0].items.map((item: any, index: number) => (
+                          <HStack justifyContent={"flex-end"} key={index}>
+                            <Text>{item.type}</Text>
+                            <Text>{convertToBillNumber(item.price)}</Text>
+                          </HStack>
+                        ))}
                       </Stack>
                     </HStack>
                   ))}

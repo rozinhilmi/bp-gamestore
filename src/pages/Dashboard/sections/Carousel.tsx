@@ -4,9 +4,8 @@ import {
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 import { Link } from "react-router-dom";
-import { carousel_content } from "../../../../public/database.json";
 
-const Carousel = () => {
+const Carousel = (props: { carousel_content: any }) => {
   return (
     <Stack
       alignItems={"center"}
@@ -26,14 +25,14 @@ const Carousel = () => {
         as={"b"}
         fontSize={{ sm: "2xl", md: "3xl" }}
       >
-        {carousel_content.title}
+        {props.carousel_content.title}
       </Text>
       <Text
         zIndex={"2"}
         width={{ base: "100%", lg: "60%" }}
         color={secondaryTextColor}
       >
-        {carousel_content.description}
+        {props.carousel_content.description}
       </Text>
       <HStack zIndex={"2"}>
         <Link to={"https://bpgamestore.com/auth/register"} target="_blank">
@@ -55,7 +54,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Carousel/${carousel_content.gambar[0]}`} />
+        <Image src={`/assets/Carousel/${props.carousel_content.gambar[0]}`} />
       </Stack>
 
       <Stack
@@ -71,7 +70,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Carousel/${carousel_content.gambar[1]}`} />
+        <Image src={`/assets/Carousel/${props.carousel_content.gambar[1]}`} />
       </Stack>
 
       <Stack
@@ -87,7 +86,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Carousel/${carousel_content.gambar[2]}`} />
+        <Image src={`/assets/Carousel/${props.carousel_content.gambar[2]}`} />
       </Stack>
 
       <Stack
@@ -103,7 +102,7 @@ const Carousel = () => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Carousel/${carousel_content.gambar[3]}`} />
+        <Image src={`/assets/Carousel/${props.carousel_content.gambar[3]}`} />
       </Stack>
     </Stack>
   );
