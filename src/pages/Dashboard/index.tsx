@@ -52,8 +52,8 @@ const index = () => {
           >
             <Image
               position={"fixed"}
-              bottom={"20px"}
-              right={"20px"}
+              bottom={{ base: "10px", md: "20px" }}
+              right={{ base: "10px", md: "20px" }}
               cursor={"pointer"}
               src="/assets/whatsapp-icon.png"
               width={"60px"}
