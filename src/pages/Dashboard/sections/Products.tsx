@@ -22,19 +22,65 @@ const Products = (props: { list_category_product: any; products: any }) => {
   const [selectedProduct, setSelectedProduct]: any = useState(null);
   const katalog = [
     {
-      title: "60 + 6 Bonds",
+      title: "Mobile Legends Membership",
       items: [
         {
-          type: "Gold",
-          price: 13200,
+          type: "Twillight Pass",
+          price: 130464,
         },
         {
-          type: "Crown",
-          price: 15200,
+          type: "Weekly Diamond Pass",
+          price: 24661,
         },
         {
-          type: "Platinum",
-          price: 17200,
+          type: "Starlight (300 Diamonds)",
+          price: 66979,
+        },
+        {
+          type: "Starlight plus (750 Diamonds)",
+          price: 162548,
+        },
+      ],
+    },
+    {
+      title: "Event Top Up",
+      items: [
+        {
+          type: "100 Diamonds",
+          price: 24545,
+        },
+        {
+          type: "250 Diamonds",
+          price: 21492,
+        },
+        {
+          type: "500 Diamonds",
+          price: 122982,
+        },
+        {
+          type: "Starlight plus (750 Diamonds)",
+          price: 162548,
+        },
+      ],
+    },
+    {
+      title: "Mobile legends Promo",
+      items: [
+        {
+          type: "3 Diamonds",
+          price: 24545,
+        },
+        {
+          type: "5 Diamonds",
+          price: 21492,
+        },
+        {
+          type: "11 Diamonds",
+          price: 122982,
+        },
+        {
+          type: "14 Diamonds",
+          price: 162548,
         },
       ],
     },
@@ -127,7 +173,8 @@ const Products = (props: { list_category_product: any; products: any }) => {
             setSelectedProduct(null);
             onClose();
           }}
-          size={"full"}
+          // size={"full"}
+          size={{ base: "full", md: "6xl" }}
         >
           <ModalOverlay />
           <ModalContent
@@ -149,7 +196,11 @@ const Products = (props: { list_category_product: any; products: any }) => {
               >
                 <IoMdClose />
               </Button>
-              <Stack gap={"20px"} paddingY={"10px"}>
+              <Stack
+                gap={"20px"}
+                paddingY={"10px"}
+                marginTop={{ base: "30px", md: "0px" }}
+              >
                 <Stack textAlign="center" lineHeight={"5"}>
                   <Text fontSize={"20px"} as="b">
                     Katalog Harga Produk - {selectedProduct.title}
@@ -161,12 +212,12 @@ const Products = (props: { list_category_product: any; products: any }) => {
 
                 <HStack
                   flexWrap={"wrap"}
-                  justifyContent={"center"}
+                  alignItems={"flex-start"}
                   color={primaryTextDarkColor}
                   lineHeight={"3"}
                 >
-                  {[1, 2, 3, 4, 5, 6, 7, 8].map((item: number) => (
-                    <HStack
+                  {katalog.map((item: any) => (
+                    <Stack
                       backgroundColor={"rgb(43, 54, 80)"}
                       padding={"20px"}
                       borderRadius={"12px"}
@@ -174,17 +225,24 @@ const Products = (props: { list_category_product: any; products: any }) => {
                       alignItems={"center"}
                       justifyContent={"space-between"}
                       key={item}
+                      gap={"30px"}
                     >
-                      <Text>{katalog[0].title}</Text>
-                      <Stack fontSize={"14px"}>
-                        {katalog[0].items.map((item: any, index: number) => (
-                          <HStack justifyContent={"flex-end"} key={index}>
+                      <Text as={"b"} color={primaryTextDarkColor}>
+                        {item.title}
+                      </Text>
+                      <Stack fontSize={"14px"} width={"100%"}>
+                        {item.items.map((item: any, index: number) => (
+                          <HStack
+                            justifyContent={"space-between"}
+                            key={index}
+                            flexWrap={"wrap"}
+                          >
                             <Text>{item.type}</Text>
                             <Text>{convertToBillNumber(item.price)}</Text>
                           </HStack>
                         ))}
                       </Stack>
-                    </HStack>
+                    </Stack>
                   ))}
                 </HStack>
               </Stack>
