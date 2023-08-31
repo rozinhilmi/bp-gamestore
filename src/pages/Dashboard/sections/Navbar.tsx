@@ -1,7 +1,7 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextDarkColor,
-  secondaryDarkColor,
+  primaryTextColor,
+  secondaryColor,
 } from "../../../utils/constant/theme";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -17,7 +17,7 @@ const Navbar = () => {
         paddingX={{ base: "10px", lg: "40px" }}
         width={"100%"}
         maxW={"1440px"}
-        backgroundColor={secondaryDarkColor}
+        backgroundColor={secondaryColor()}
         justify={"space-between"}
         className="navbar"
         position={"fixed"}
@@ -30,7 +30,7 @@ const Navbar = () => {
           <HStack gap={"15px"}>
             <a href="#Carousel">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -41,7 +41,7 @@ const Navbar = () => {
 
             <a href="#Products">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             <a href="#Benefit">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -62,7 +62,7 @@ const Navbar = () => {
             </a>
             <a href="#OurClients">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -72,7 +72,7 @@ const Navbar = () => {
             </a>
             <a href="#Services">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -82,7 +82,7 @@ const Navbar = () => {
             </a>
             <a href="#OtherServices">
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 _hover={{ color: "rgb(49, 130, 206)" }}
                 as={"b"}
                 cursor={"pointer"}
@@ -125,7 +125,7 @@ const Navbar = () => {
         width={"100%"}
         height={"100vh"}
         maxW={"1440px"}
-        backgroundColor={secondaryDarkColor}
+        backgroundColor={secondaryColor()}
         position={"fixed"}
         zIndex={"11"}
       >

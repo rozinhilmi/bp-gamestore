@@ -1,6 +1,6 @@
 import { HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextDarkColor,
+  primaryTextColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 const Benefit = (props: { benefit: any }) => {
@@ -16,7 +16,7 @@ const Benefit = (props: { benefit: any }) => {
       <Text
         as={"b"}
         fontSize={{ base: "2xl", lg: "3xl" }}
-        color={primaryTextDarkColor}
+        color={primaryTextColor()}
         textAlign={"center"}
       >
         Mengapa Memilih Kami
@@ -35,7 +35,7 @@ const Benefit = (props: { benefit: any }) => {
           >
             <Stack width={{ base: "100%", xl: "50%" }}>
               <Text
-                color={primaryTextDarkColor}
+                color={primaryTextColor()}
                 as={"b"}
                 fontSize={{ base: "2xl", xl: "4xl" }}
                 textAlign={{
@@ -46,7 +46,7 @@ const Benefit = (props: { benefit: any }) => {
                 {item.title}
               </Text>
               <Text
-                color={secondaryTextColor}
+                color={secondaryTextColor()}
                 textAlign={{
                   base: "start",
                   md: index % 2 == 0 ? "end" : "start",

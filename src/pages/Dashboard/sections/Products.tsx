@@ -7,9 +7,9 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import {
-  primaryDarkColor,
-  primaryTextDarkColor,
-  secondaryDarkColor,
+  primaryColor,
+  primaryTextColor,
+  secondaryColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 import { useState } from "react";
@@ -30,7 +30,7 @@ const Products = (props: {
     <Stack
       padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
-      bg={secondaryDarkColor}
+      bg={secondaryColor()}
       margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       id="Products"
@@ -39,7 +39,7 @@ const Products = (props: {
       <Text
         as={"b"}
         fontSize={{ base: "2xl", lg: "3xl" }}
-        color={primaryTextDarkColor}
+        color={primaryTextColor()}
         textAlign={"center"}
       >
         Daftar Produk yang Tersedia
@@ -47,7 +47,7 @@ const Products = (props: {
 
       <HStack flexWrap={"wrap"} justifyContent={"center"}>
         <Button
-          color={primaryTextDarkColor}
+          color={primaryTextColor()}
           backgroundColor={
             selectedCategory === "" ? "rgb(49, 130, 206)" : "rgb(43, 54, 80)"
           }
@@ -61,7 +61,7 @@ const Products = (props: {
         </Button>
         {props.list_category_product.map((item: string, index: number) => (
           <Button
-            color={primaryTextDarkColor}
+            color={primaryTextColor()}
             onClick={() => setSelectedCategory(item)}
             key={index}
             backgroundColor={
@@ -101,7 +101,7 @@ const Products = (props: {
               _hover={{ transform: "translateY(-10px)" }}
             >
               <Image src={`/assets/Products/${item.src}`} loading="lazy" />
-              <Text color={primaryTextDarkColor} as={"b"}>
+              <Text color={primaryTextColor()} as={"b"}>
                 {item.title}
               </Text>
             </Stack>
@@ -121,8 +121,8 @@ const Products = (props: {
         >
           <ModalOverlay />
           <ModalContent
-            backgroundColor={primaryDarkColor}
-            color={primaryTextDarkColor}
+            backgroundColor={primaryColor()}
+            color={primaryTextColor()}
             borderRadius={"12px"}
             position={"relative"}
           >
@@ -148,7 +148,7 @@ const Products = (props: {
                   <Text fontSize={"20px"} as="b">
                     Katalog Harga Produk - {selectedProduct.name_of_game}
                   </Text>
-                  <Text color={secondaryTextColor}>
+                  <Text color={secondaryTextColor()}>
                     Nikmati harga lebih murah dengan menjadi member crown!
                   </Text>
                 </Stack>
@@ -156,7 +156,7 @@ const Products = (props: {
                 <HStack
                   flexWrap={"wrap"}
                   alignItems={"flex-start"}
-                  color={primaryTextDarkColor}
+                  color={primaryTextColor()}
                   lineHeight={"3"}
                 >
                   {selectedProduct.data.map((item: any, index: number) => (
@@ -170,7 +170,7 @@ const Products = (props: {
                       key={index}
                       gap={"30px"}
                     >
-                      <Text as={"b"} color={primaryTextDarkColor}>
+                      <Text as={"b"} color={primaryTextColor()}>
                         {item.title}
                       </Text>
                       <Stack fontSize={"14px"} width={"100%"}>

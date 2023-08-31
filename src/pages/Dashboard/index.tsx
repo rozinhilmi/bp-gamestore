@@ -1,7 +1,7 @@
 import { Image, Stack } from "@chakra-ui/react";
 import Navbar from "./sections/Navbar";
 import Carousel from "./sections/Carousel";
-import { primaryDarkColor } from "../../utils/constant/theme";
+import { primaryColor } from "../../utils/constant/theme";
 import Products from "./sections/Products";
 import Benefit from "./sections/Benefit";
 import OurClients from "./sections/OurClients";
@@ -24,13 +24,13 @@ const index = () => {
       width={"100%"}
       justifyContent={"center"}
       alignItems={"center"}
-      backgroundColor={primaryDarkColor}
+      backgroundColor={primaryColor()}
     >
       {data ? (
         <Stack
           width={"100%"}
           maxWidth={"1440px"}
-          backgroundColor={primaryDarkColor}
+          backgroundColor={primaryColor()}
           position={"relative"}
           // minHeight={"80vh"}
         >

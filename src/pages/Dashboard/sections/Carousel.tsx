@@ -1,6 +1,6 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextDarkColor,
+  primaryTextColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ const Carousel = (props: { carousel_content: any }) => {
     >
       <Text
         zIndex={"2"}
-        color={primaryTextDarkColor}
+        color={primaryTextColor()}
         as={"b"}
         fontSize={{ sm: "2xl", md: "3xl" }}
       >
@@ -30,7 +30,7 @@ const Carousel = (props: { carousel_content: any }) => {
       <Text
         zIndex={"2"}
         width={{ base: "100%", lg: "60%" }}
-        color={secondaryTextColor}
+        color={secondaryTextColor()}
       >
         {props.carousel_content.description}
       </Text>

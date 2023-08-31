@@ -1,7 +1,12 @@
 import { Outlet } from "react-router-dom";
 
 const Middleware = () => {
-  console.log("MiddleWare active");
+  try {
+    if (!localStorage.theme) {
+      localStorage.theme = "dark";
+    }
+  } catch (error) {}
+  // console.log("MiddleWare active");
   return <Outlet />;
 };
 

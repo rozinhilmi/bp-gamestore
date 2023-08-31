@@ -1,7 +1,7 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
-  primaryTextDarkColor,
-  secondaryDarkColor,
+  primaryTextColor,
+  secondaryColor,
   secondaryTextColor,
 } from "../../../utils/constant/theme";
 
@@ -10,7 +10,7 @@ const OurClients = (props: { clients: any }) => {
     <Stack
       padding={{ base: "15px", lg: "30px" }}
       paddingY={"30px"}
-      bg={secondaryDarkColor}
+      bg={secondaryColor()}
       margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       alignItems={"center"}
@@ -25,14 +25,14 @@ const OurClients = (props: { clients: any }) => {
           as={"b"}
           fontSize={{ base: "2xl", lg: "4xl" }}
           textAlign={"center"}
-          color={primaryTextDarkColor}
+          color={primaryTextColor()}
         >
           Jumlah Reseller
         </Text>
         <Text
           width={{ base: "100%", lg: "60%" }}
           textAlign={"center"}
-          color={secondaryTextColor}
+          color={secondaryTextColor()}
         >
           Gampang kari ngedit
         </Text>
@@ -51,7 +51,7 @@ const OurClients = (props: { clients: any }) => {
             objectFit={"contain"}
           >
             <Image src={`/assets/Products/${item.src}`} loading="lazy" />
-            <Text color={primaryTextDarkColor} as={"b"}>
+            <Text color={primaryTextColor()} as={"b"}>
               {item.title}
             </Text>
           </Stack>
@@ -61,7 +61,7 @@ const OurClients = (props: { clients: any }) => {
         as={"b"}
         fontSize={"3xl"}
         textAlign={"center"}
-        color={primaryTextDarkColor}
+        color={primaryTextColor()}
       >
         150+ Client Lainya
       </Text>
