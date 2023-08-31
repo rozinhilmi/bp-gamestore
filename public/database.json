@@ -118,5 +118,484 @@
       "description": "Website Gratis adalah solusi bagi anda yang ingin membuat website topup anda sendiri dan mengelola bisnis anda sendiri. Dengan VocaPanel anda dapat meraih keuntungan lebih besar serta membuat komunitas anda sendiri.",
       "src": "Pubg Mobile.webp"
     }
+  ],
+
+  "catalog_product": [
+    {
+      "name_of_game": "Mobile Legend",
+      "data": [
+        {
+          "title": "Mobile Legends Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Mobile legends Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "Pubg Mobile",
+      "data": [
+        {
+          "title": "Pubg Mobile Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Pubg Mobile Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "Free Fire",
+      "data": [
+        {
+          "title": "Free Fire Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Free Fire Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "Fifa Mobile",
+      "data": [
+        {
+          "title": "Fifa Mobile Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Fifa Mobile Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "AOV",
+      "data": [
+        {
+          "title": "AOV Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "AOV Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "COD Mobile",
+      "data": [
+        {
+          "title": "COD Mobile Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "COD Mobile Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name_of_game": "Domino",
+      "data": [
+        {
+          "title": "Domino Membership",
+          "items": [
+            {
+              "type": "Twillight Pass",
+              "price": 130464
+            },
+            {
+              "type": "Weekly Diamond Pass",
+              "price": 24661
+            },
+            {
+              "type": "Starlight (300 Diamonds)",
+              "price": 66979
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Event Top Up",
+          "items": [
+            {
+              "type": "100 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "250 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "500 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "Starlight plus (750 Diamonds)",
+              "price": 162548
+            }
+          ]
+        },
+        {
+          "title": "Domino Promo",
+          "items": [
+            {
+              "type": "3 Diamonds",
+              "price": 24545
+            },
+            {
+              "type": "5 Diamonds",
+              "price": 21492
+            },
+            {
+              "type": "11 Diamonds",
+              "price": 122982
+            },
+            {
+              "type": "14 Diamonds",
+              "price": 162548
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

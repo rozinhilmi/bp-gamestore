@@ -17,74 +17,13 @@ import { Modal, ModalOverlay, ModalContent, ModalBody } from "@chakra-ui/react";
 import { IoMdClose } from "react-icons/io";
 import { convertToBillNumber } from "../../../utils/helper/helper";
 
-const Products = (props: { list_category_product: any; products: any }) => {
+const Products = (props: {
+  list_category_product: any;
+  products: any;
+  catalog_product: any;
+}) => {
   const [selectedCategory, setSelectedCategory]: any = useState("");
   const [selectedProduct, setSelectedProduct]: any = useState(null);
-  const katalog = [
-    {
-      title: "Mobile Legends Membership",
-      items: [
-        {
-          type: "Twillight Pass",
-          price: 130464,
-        },
-        {
-          type: "Weekly Diamond Pass",
-          price: 24661,
-        },
-        {
-          type: "Starlight (300 Diamonds)",
-          price: 66979,
-        },
-        {
-          type: "Starlight plus (750 Diamonds)",
-          price: 162548,
-        },
-      ],
-    },
-    {
-      title: "Event Top Up",
-      items: [
-        {
-          type: "100 Diamonds",
-          price: 24545,
-        },
-        {
-          type: "250 Diamonds",
-          price: 21492,
-        },
-        {
-          type: "500 Diamonds",
-          price: 122982,
-        },
-        {
-          type: "Starlight plus (750 Diamonds)",
-          price: 162548,
-        },
-      ],
-    },
-    {
-      title: "Mobile legends Promo",
-      items: [
-        {
-          type: "3 Diamonds",
-          price: 24545,
-        },
-        {
-          type: "5 Diamonds",
-          price: 21492,
-        },
-        {
-          type: "11 Diamonds",
-          price: 122982,
-        },
-        {
-          type: "14 Diamonds",
-          price: 162548,
-        },
-      ],
-    },
-  ];
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -147,7 +86,11 @@ const Products = (props: { list_category_product: any; products: any }) => {
           item.category.includes(selectedCategory) ? (
             <Stack
               onClick={() => {
-                setSelectedProduct(item);
+                setSelectedProduct(
+                  props.catalog_product.find((catalog: any) => {
+                    return catalog.name_of_game == item.title;
+                  })
+                );
                 onOpen();
               }}
               key={index}
@@ -203,7 +146,7 @@ const Products = (props: { list_category_product: any; products: any }) => {
               >
                 <Stack textAlign="center" lineHeight={"5"}>
                   <Text fontSize={"20px"} as="b">
-                    Katalog Harga Produk - {selectedProduct.title}
+                    Katalog Harga Produk - {selectedProduct.name_of_game}
                   </Text>
                   <Text color={secondaryTextColor}>
                     Nikmati harga lebih murah dengan menjadi member crown!
@@ -216,7 +159,7 @@ const Products = (props: { list_category_product: any; products: any }) => {
                   color={primaryTextDarkColor}
                   lineHeight={"3"}
                 >
-                  {katalog.map((item: any) => (
+                  {selectedProduct.data.map((item: any, index: number) => (
                     <Stack
                       backgroundColor={"rgb(43, 54, 80)"}
                       padding={"20px"}
@@ -224,7 +167,7 @@ const Products = (props: { list_category_product: any; products: any }) => {
                       width={{ base: "100%", md: "49%" }}
                       alignItems={"center"}
                       justifyContent={"space-between"}
-                      key={item}
+                      key={index}
                       gap={"30px"}
                     >
                       <Text as={"b"} color={primaryTextDarkColor}>

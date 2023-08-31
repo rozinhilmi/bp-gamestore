@@ -39,6 +39,7 @@ const index = () => {
           <Products
             list_category_product={data.list_category_product}
             products={data.products}
+            catalog_product={data.catalog_product}
           />
           <Benefit benefit={data.benefit} />
           <OurClients clients={data.clients} />
