@@ -23,6 +23,7 @@ const Navbar = () => {
         position={"fixed"}
         zIndex={"10"}
         boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+        fontSize={"14px"}
       >
         <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
 
