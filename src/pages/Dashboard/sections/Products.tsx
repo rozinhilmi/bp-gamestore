@@ -47,7 +47,7 @@ const Products = (props: {
 
       <HStack flexWrap={"wrap"} justifyContent={"center"}>
         <Button
-          color={primaryTextColor()}
+          color={"white"}
           backgroundColor={
             selectedCategory === "" ? "rgb(49, 130, 206)" : "rgb(43, 54, 80)"
           }
@@ -61,7 +61,7 @@ const Products = (props: {
         </Button>
         {props.list_category_product.map((item: string, index: number) => (
           <Button
-            color={primaryTextColor()}
+            color={"white"}
             onClick={() => setSelectedCategory(item)}
             key={index}
             backgroundColor={
@@ -130,6 +130,7 @@ const Products = (props: {
               <Button
                 size={{ base: "xs", sm: "sm" }}
                 colorScheme="whiteAlpha"
+                variant={"outline"}
                 position={"absolute"}
                 right={"5"}
                 onClick={() => {

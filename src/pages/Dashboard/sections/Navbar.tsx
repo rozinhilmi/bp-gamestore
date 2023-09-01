@@ -1,5 +1,6 @@
 import { Button, HStack, Image, Stack, Text } from "@chakra-ui/react";
 import {
+  primaryColor,
   primaryTextColor,
   secondaryColor,
 } from "../../../utils/constant/theme";
@@ -17,12 +18,12 @@ const Navbar = () => {
         paddingX={{ base: "10px", md: "40px" }}
         width={"100%"}
         maxW={"1440px"}
-        backgroundColor={secondaryColor()}
+        backgroundColor={primaryColor()}
         justify={"space-between"}
         className="navbar"
         position={"fixed"}
         zIndex={"10"}
-        boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+        boxShadow={"rgba(0, 0, 0, 0.16) 0px 1px 4px"}
         fontSize={"14px"}
       >
         <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
@@ -100,7 +101,10 @@ const Navbar = () => {
             <Link to={"https://bpgamestore.com/auth/register"} target="_blank">
               <Button colorScheme="whiteAlpha">Daftar Sekarang</Button>
             </Link>
-            {/* <Button colorScheme="blackAlpha">
+            {/* <Button
+              colorScheme="blackAlpha"
+             
+            >
               <BsFillSunFill />
             </Button> */}
           </HStack>
@@ -108,6 +112,7 @@ const Navbar = () => {
 
         <Button
           colorScheme="whiteAlpha"
+          variant={"outline"}
           display={{ base: "flex", lg: "none" }}
           onClick={() => {
             setShowSidebar(true);
@@ -134,6 +139,7 @@ const Navbar = () => {
           <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
           <Button
             colorScheme="whiteAlpha"
+            variant={"outline"}
             display={{ base: "flex", lg: "none" }}
             onClick={() => {
               setShowSidebar(false);
