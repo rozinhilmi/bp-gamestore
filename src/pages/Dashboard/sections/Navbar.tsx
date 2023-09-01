@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <HStack
         height={"1.7cm"}
-        paddingX={{ base: "10px", lg: "40px" }}
+        paddingX={{ base: "10px", md: "40px" }}
         width={"100%"}
         maxW={"1440px"}
         backgroundColor={secondaryColor()}

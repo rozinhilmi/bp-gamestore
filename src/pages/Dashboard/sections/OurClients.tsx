@@ -47,7 +47,7 @@ const OurClients = (props: { clients: any }) => {
         {props.clients.map((item: any, index: number) => (
           <Stack
             key={index}
-            width={{ base: "45%", lg: "220px" }}
+            width={{ base: "45%", sm: "170px", md: "220px" }}
             objectFit={"contain"}
           >
             <Image src={`/assets/${item.src}`} loading="lazy" />
