@@ -84,7 +84,7 @@ const OtherService = (props: { other_services: any }) => {
                   md: index % 2 == 0 ? "flex-start" : "flex-end",
                   lg: "center",
                 }}
-                src={`/assets/Products/${item.src}`}
+                src={`/assets/${item.src}`}
                 loading="lazy"
               />
             </Stack>

@@ -71,7 +71,7 @@ const Benefit = (props: { benefit: any }) => {
                   md: index % 2 == 0 ? "flex-start" : "flex-end",
                   lg: "center",
                 }}
-                src={`/assets/Benefit/${item.src}`}
+                src={`/assets/${item.src}`}
                 loading="lazy"
               />
             </Stack>

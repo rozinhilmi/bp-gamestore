@@ -54,7 +54,7 @@ const Carousel = (props: { carousel_content: any }) => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Carousel/${props.carousel_content.gambar[0]}`} />
+        <Image src={`/assets/${props.carousel_content.gambar[0]}`} />
       </Stack>
 
       <Stack
@@ -70,7 +70,7 @@ const Carousel = (props: { carousel_content: any }) => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Carousel/${props.carousel_content.gambar[1]}`} />
+        <Image src={`/assets/${props.carousel_content.gambar[1]}`} />
       </Stack>
 
       <Stack
@@ -86,7 +86,7 @@ const Carousel = (props: { carousel_content: any }) => {
         objectFit={"contain"}
         transform={"rotate(-5deg)"}
       >
-        <Image src={`/assets/Carousel/${props.carousel_content.gambar[2]}`} />
+        <Image src={`/assets/${props.carousel_content.gambar[2]}`} />
       </Stack>
 
       <Stack
@@ -102,7 +102,7 @@ const Carousel = (props: { carousel_content: any }) => {
         objectFit={"contain"}
         transform={"rotate(5deg)"}
       >
-        <Image src={`/assets/Carousel/${props.carousel_content.gambar[3]}`} />
+        <Image src={`/assets/${props.carousel_content.gambar[3]}`} />
       </Stack>
     </Stack>
   );

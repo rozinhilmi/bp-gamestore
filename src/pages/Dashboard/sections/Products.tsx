@@ -100,7 +100,7 @@ const Products = (props: {
               transition={"0.5s"}
               _hover={{ transform: "translateY(-10px)" }}
             >
-              <Image src={`/assets/Products/${item.src}`} loading="lazy" />
+              <Image src={`/assets/${item.src}`} loading="lazy" />
               <Text color={primaryTextColor()} as={"b"}>
                 {item.title}
               </Text>
