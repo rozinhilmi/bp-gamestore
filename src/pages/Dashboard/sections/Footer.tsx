@@ -22,7 +22,12 @@ const Footer = () => {
         gap={"30px"}
       >
         <Stack>
-          <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
+          <Image
+            src="/assets/Logo.png"
+            width={"40px"}
+            objectFit={"contain"}
+            loading="lazy"
+          />
           <Text color={primaryTextColor()}>
             Supplier of top up games & vouchers best selling, cheap, safe legal
             100% with the most complete payment in Indonesia{" "}

@@ -59,6 +59,7 @@ const index = () => {
               src="/assets/whatsapp-icon.png"
               width={"60px"}
               height={"60px"}
+              loading="lazy"
             />
           </Link>
 
