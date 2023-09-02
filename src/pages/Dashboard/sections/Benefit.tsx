@@ -42,6 +42,7 @@ const Benefit = (props: { benefit: any }) => {
                   base: "start",
                   md: index % 2 == 0 ? "end" : "start",
                 }}
+                lineHeight={"1"}
               >
                 {item.title}
               </Text>

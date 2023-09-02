@@ -128,7 +128,7 @@ const Products = (props: {
           >
             <ModalBody>
               <Button
-                size={{ base: "xs", sm: "sm" }}
+                size="sm"
                 colorScheme="whiteAlpha"
                 variant={"outline"}
                 position={"absolute"}
@@ -162,7 +162,7 @@ const Products = (props: {
                 >
                   {selectedProduct.data.map((item: any, index: number) => (
                     <Stack
-                      backgroundColor={"rgb(43, 54, 80)"}
+                      backgroundColor={secondaryColor()}
                       padding={"20px"}
                       borderRadius={"12px"}
                       width={{ base: "100%", md: "49%" }}
