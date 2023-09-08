@@ -35,7 +35,10 @@ const index = () => {
           // minHeight={"80vh"}
         >
           <Navbar />
-          <Carousel carousel_content={data.carousel_content} />
+          <Carousel
+            carousel_content={data.carousel_content}
+            admin_chat={data.admin_chat}
+          />
           <Products
             list_category_product={data.list_category_product}
             products={data.products}

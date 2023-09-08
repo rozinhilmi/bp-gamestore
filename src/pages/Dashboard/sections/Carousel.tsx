@@ -5,7 +5,7 @@ import {
 } from "../../../utils/constant/theme";
 import { Link } from "react-router-dom";
 
-const Carousel = (props: { carousel_content: any }) => {
+const Carousel = (props: { carousel_content: any; admin_chat: any }) => {
   return (
     <Stack
       alignItems={"center"}
@@ -39,7 +39,12 @@ const Carousel = (props: { carousel_content: any }) => {
           <Button colorScheme="blue">Daftar Sekarang</Button>
         </Link>
 
-        <Button colorScheme="whiteAlpha">Konsultasi Gratis</Button>
+        <Link
+          to={`https://wa.me/${props.admin_chat.phone}?text=${props.admin_chat.chat}`}
+          target="_blank"
+        >
+          <Button colorScheme="whiteAlpha">Konsultasi Gratis</Button>
+        </Link>
       </HStack>
       <Stack
         // display={{ base: "none", xl: "block" }}
