@@ -14,6 +14,7 @@ const OtherService = (props: { other_services: any }) => {
       borderRadius={"12px"}
       id="OtherServices"
       bg={secondaryColor()}
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Stack alignItems={"center"}>
         <Text

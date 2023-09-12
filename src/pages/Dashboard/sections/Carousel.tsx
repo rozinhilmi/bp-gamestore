@@ -18,6 +18,7 @@ const Carousel = (props: { carousel_content: any; admin_chat: any }) => {
       gap={"20px"}
       position={"relative"}
       id="Carousel"
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Text
         zIndex={"2"}

@@ -12,6 +12,7 @@ const Services = (props: { services: any }) => {
       margin={"20px"}
       borderRadius={"12px"}
       id="Services"
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Stack alignItems={"center"}>
         <Text

@@ -35,6 +35,7 @@ const Products = (props: {
       borderRadius={"12px"}
       id="Products"
       gap={"30px"}
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Text
         as={"b"}

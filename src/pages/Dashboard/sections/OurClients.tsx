@@ -15,6 +15,7 @@ const OurClients = (props: { clients: any }) => {
       borderRadius={"12px"}
       alignItems={"center"}
       id="OurClients"
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Button colorScheme="blue" width={"250px"}>
         Klien dan Partner Bisnis Kami

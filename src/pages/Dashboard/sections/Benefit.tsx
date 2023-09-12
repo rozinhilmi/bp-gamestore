@@ -12,6 +12,7 @@ const Benefit = (props: { benefit: any }) => {
       borderRadius={"12px"}
       id="Benefit"
       scrollBehavior={"smooth"}
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Text
         as={"b"}
